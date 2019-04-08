@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import { Router } from 'react-router-dom';
+import {Router} from 'react-router-dom';
 import history from './components/history';
 import NavBar from './components/navbar';
 import Routes from './components/routes';
 
 class App extends Component {
   render() {
-    return(
+    return (
       <React.Fragment>
         <Router history={history}>
           <React.Fragment>
@@ -17,7 +17,7 @@ class App extends Component {
           </React.Fragment>
         </Router>
       </React.Fragment>
-    )
+    );
   }
 }
 

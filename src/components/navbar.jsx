@@ -5,43 +5,48 @@ import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import { withStyles } from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 
-const styles = theme => ({
-    '@global': {
-        body: {
-            backgroundColor: theme.palette.common.white,
-        },
+const styles = (theme) => ({
+  '@global': {
+    body: {
+      backgroundColor: theme.palette.common.white,
     },
-    appBar: {
-        position: 'relative',
-    },
-    toolbarTitle: {
-        flex: 1,
-    },
-})
+  },
+  'appBar': {
+    position: 'relative',
+  },
+  'toolbarTitle': {
+    flex: 1,
+  },
+});
 
 function NavBar(props) {
-    const { classes } = props;
+  const {classes} = props;
 
-    return(
-        <React.Fragment>
-            <AppBar position="static" color="default" className={classes.appBar}>
-                <Toolbar>
-                    <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-                        420 Is Coming
-                    </Typography>
-                    <Button onClick={() => history.push('/')}>Home</Button>
-                    <Button onClick={() => history.push('/team')}>Browse</Button>
-                    <Button onClick={() => history.push('/plans')}>About Us</Button>
-                </Toolbar>
-            </AppBar>
-        </React.Fragment>
-    )
+  return (
+    <React.Fragment>
+      <AppBar position="static" color="default" className={classes.appBar}>
+        <Toolbar>
+          <Typography
+            variant="h6"
+            color="inherit"
+            noWrap
+            className={classes.toolbarTitle}
+          >
+            420 Is Coming
+          </Typography>
+          <Button onClick={() => history.push('/')}>Home</Button>
+          <Button onClick={() => history.push('/team')}>Browse</Button>
+          <Button onClick={() => history.push('/plans')}>About Us</Button>
+        </Toolbar>
+      </AppBar>
+    </React.Fragment>
+  );
 }
 
 NavBar.propTypes = {
-    classes: PropTypes.object.isRequired,
-}
+  classes: PropTypes.object.isRequired,
+};
 
 export default withStyles(styles)(NavBar);

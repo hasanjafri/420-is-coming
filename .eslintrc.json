@@ -19,5 +19,7 @@
         "react"
     ],
     "rules": {
+        "no-unused-vars": "off",
+        "require-jsdoc": "off"
     }
 }
