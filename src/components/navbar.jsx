@@ -37,7 +37,7 @@ function NavBar(props) {
             LOUD PACKS
           </Typography>
           <Button onClick={() => history.push('/')}>Home</Button>
-          <Button onClick={() => history.push('/browse')}>Browse</Button>
+          <Button onClick={() => history.push('/catalog')}>Browse</Button>
           <Button onClick={() => history.push('/about-us')}>About Us</Button>
           <Button onClick={() => history.push('/ar-view')}>AR</Button>
         </Toolbar>

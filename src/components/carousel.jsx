@@ -38,6 +38,7 @@ const settings = {
     speed: 333,
     arrows: false,
     dots: false,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 1024,
