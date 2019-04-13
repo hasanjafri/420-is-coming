@@ -5,34 +5,33 @@ import '../styles/carousel.css';
 const data = [
     {
         id: 0,
-        color: 'blue'
+        image: 'https://s3.amazonaws.com/leafly/content/leaflys-visual-quality-guide-to-selecting-cannabis/GAtB6sxoQYOGa6oOl3Eg_Grape%20Ape.jpg'
     },
     {
         id: 1,
-        color: 'black'
+        image: 'https://image.shutterstock.com/image-photo/close-blue-walker-marijuana-bud-260nw-557649868.jpg'
     },
     {
         id: 2,
-        color: 'green'
+        image: 'https://image.shutterstock.com/image-photo/close-blue-walker-marijuana-bud-260nw-557649868.jpg'
     },
     {
         id: 3,
-        color: 'blue'
+        image: 'https://image.shutterstock.com/image-photo/close-blue-walker-marijuana-bud-260nw-557649868.jpg'
     },
     {
         id: 4,
-        color: 'black'
+        image: 'https://image.shutterstock.com/image-photo/close-blue-walker-marijuana-bud-260nw-557649868.jpg'
     },
     {
         id: 5,
-        color: 'green'
+        image: 'https://image.shutterstock.com/image-photo/close-blue-walker-marijuana-bud-260nw-557649868.jpg'
     }
 ]
 
 const settings = {
     className: 'center',
     centerMode: true,
-    centerPadding: '75px',
     infinite: true,
     slidesToShow: 3,
     speed: 333,
@@ -72,7 +71,7 @@ export default class Carousel extends Component {
 
     const products = data.map(product => (
       <div key={product.id} className="Movie">
-        <div id={product.id} className="MoviePoster" style={{backgroundColor: product.color}} />
+        <div id={product.id} className="MoviePoster" style={{backgroundImage: `url(${product.image})`, backgroundSize: 'stretch'}} />
       </div>
     ))
 

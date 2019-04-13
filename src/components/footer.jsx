@@ -12,7 +12,7 @@ function Footer() {
                   <h6 className="white-text">Canada Office</h6>
                   <p className="grey-text text-lighten-4">
                     Serving the GTA area for years <br />
-                    <a className="white-text" href="mailto:info@brighttechnologies.ca">info@loudpacks.ca</a>
+                    <a className="white-text" href="mailto:info@loudpacks.ca">info@loudpacks.ca</a>
                   </p>
                 </div>
                 <div className="col l4 offset-l2 s12">

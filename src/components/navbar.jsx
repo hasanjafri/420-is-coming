@@ -40,6 +40,7 @@ function NavBar(props) {
           <Button onClick={() => history.push('/catalog')}>Browse</Button>
           <Button onClick={() => history.push('/about-us')}>About Us</Button>
           <Button onClick={() => history.push('/ar-view')}>AR</Button>
+          <Button onClick={() => history.push('/order-now')} style={{color: 'red'}}>Order Now</Button>
         </Toolbar>
       </AppBar>
     </React.Fragment>
